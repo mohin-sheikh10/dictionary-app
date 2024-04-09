@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    transition: 0.5s ease;
+}
+body {
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    width: 100%;
+    height: 100vh;
+}
+::placeholder {
+    font-size: 1.1rem;
+}
+.container {
+    background-color: #fff;
+    width: 90vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBox input {
+    border-bottom: 2px solid #9890e3;
+    padding: 8px;
+    width: 70%;
+    font-size: 1.1rem;
+    color: #333;
+}
+.searchBox button {
+    background-color: #9890e3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+.searchBox button:hover {
+    background-color: #8e44ad;
+}
+
+.result {
+    position: relative;
+}
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.word h2 {
+    color: #333;
+}
+.word button {
+    background: transparent;
+    font-size: 1.2rem;
+}
+.details {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+}
+.wordMeaning {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+.wordExample {
+    font-style: italic;
+    color: #9890e3;
+    border-left: 5px solid #9890e3;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.error {
+    margin-top: 2rem;
+}
